@@ -983,5 +983,8 @@ footer p a {
     .partners-item img {
         border-radius: 3px;
     }
-
+    
+    .footer-container{
+        padding: 10px;
+    }
 }

@@ -54,10 +54,12 @@ body {
 }
 
 .nav-container ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 12px;
     padding: 8px 12px;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
 }
 
 .nav-container ul li a:hover {
@@ -130,15 +132,6 @@ body {
     position: relative;
 }
 
-.hero-banner .hero-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    text-align: center;
-    z-index: 1;
-}
-
 .hero-banner .banner-img {
     position: absolute;
     top: 0;
@@ -148,6 +141,12 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    
+}
+
+.banner-img img{
+    width: 100%;
+    height: 100vh;
 }
 
 .hero-banner .hero-container {
@@ -285,14 +284,13 @@ body {
 
 .simple-banner {
     width: 100%;
-    height: 100%;
+    height: 300px;
     background-image: url(./img/cta-bg.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     color: #fff;
     text-align: center;
     margin-top: 100px;
@@ -301,7 +299,6 @@ body {
 
 .banner-container {
     width: 100%;
-    max-width: 1200px;
     text-align: left;
 }
 
@@ -310,6 +307,12 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.banner-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-text h4 {
@@ -330,6 +333,7 @@ body {
 .buttons {
     display: flex;
     gap: 15px;
+    
 }
 
 .buttons a {
@@ -779,19 +783,23 @@ footer p a {
         width: 100%;
     }
 
+    .hero-banner .header-text .div-dec {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .hero-banner .header-text h2 {
-        font-size: 28px;
-        line-height: 36px;
-        margin-bottom: 20px;
+        font-size: 40px;
+        line-height: 70px;
     }
 
     .hero-banner .header-text p {
-        font-size: 16px;
-        margin: 10px auto;
+        /* font-size: 16px; */
+        display: none;
     }
 
     .hero-banner .header-btn {
-        margin-top: 20px;
         display: flex;
         justify-content: center;
     }
@@ -800,11 +808,6 @@ footer p a {
         padding: 12px 20px;
         font-size: 14px;
         margin: 5px;
-    }
-
-    .hero-banner .banner-img {
-        object-fit: cover;
-        object-position: center;
     }
 
     .nav-container {
@@ -826,29 +829,37 @@ footer p a {
     }
 
     .services {
-        padding: 20px 15px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 20px 30px;
     }
 
     .service-item {
         width: 100%;
-        margin-bottom: 20px;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
     }
 
     .service-item .icon {
-        font-size: 50px;
+        font-size: 48px;
+        margin-right: 20px;
+        margin-bottom: 15px;
     }
 
     .service-item .text h4 {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .service-item .text p {
+        font-size: 13px;
     }
 
     .simple-banner {
         padding: 60px 30px;
+    }
+
+    .simple-banner .buttons{
+        margin-top: 20px;
     }
 
     .banner-container {
